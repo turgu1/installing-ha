@@ -152,7 +152,7 @@ Note that the HA server **MUST** be connected to the network through an Ethernet
     # ifconfig
     ```
     
-     note the entry with the server's IP address. For me it was: eno1
+     note the entry with the server's IP address. For me it was: `eno1`
 
     Start the editor:
 
