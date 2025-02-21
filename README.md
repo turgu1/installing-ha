@@ -21,7 +21,7 @@ Note that the HA server **MUST** be connected to the network through an Ethernet
     $ sudo apt upgrade
     ```
 
-2. Optional: If you have a defined rsa key to simplify access to the server from your PC or MAC workstation/laptop, do the following:
+2. **Optional**: If you have a defined rsa key to simplify access to the server from your PC or MAC workstation/laptop, do the following:
 
      from another terminal session on your workstation/laptop, copy the .ssh credentials for login without password to the HA server: 
 
@@ -44,7 +44,7 @@ Note that the HA server **MUST** be connected to the network through an Ethernet
    # passwd -l root
    ```
 
-5. Optional: Secure SSH authentication ONLY IF YOU COPIED YOUR RSA CREDENTIALS AT STEP 2:
+5. **Optional**: Secure SSH authentication ONLY IF YOU COPIED YOUR RSA CREDENTIALS AT STEP 2:
 
     ```
     # cd /etc/ssh
