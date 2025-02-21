@@ -2,11 +2,9 @@
 
 This is the procedure I used to install Home Assistant (HA) on a fresh installation of Ubuntu Server 24.04 on a Lenovo ThinkCenter M900 mini computer.
 
-A monitor and a keyboard are required to be connected to the computer both for the installation of Ubuntu and some steps related to modifying the BIOS in the procedure below. Also, it is easier to have the computer connected through an Ethernet cable to your network, as the ThinkCenter may not be able to use a WiFi connection without installing a compatible USB WiFi interface.
+A monitor and a keyboard are required to be connected to the computer both for the installation of Ubuntu and some steps related to modifying the BIOS in the procedure below. Also, it is neccessary to have the computer connected through an Ethernet cable to your network. The HA server **MUST** be connected to the network through an Ethernet port to run properly.
 
 It is expected that the OS has been installed with the openSSH optional package. Also make sure to unselect the use of the LVM partition scheme in the Ubuntu installation process, as it is not necessary for that kind of server, and simplify the management of the disk's space. A good tutorial on installing Ubuntu server 24.04 is available [here](https://www.linuxtechi.com/how-to-install-ubuntu-server/).
-
-Note that the HA server **MUST** be connected to the network through an Ethernet port to run properly.
 
 0. Connect to the server using a terminal screen from your PC or MAC workstation/laptop. Replace `[USERNAME]` with the username created when installing the OS, and `[IP ADDRESS]` with the server IP address. You can find it on the DHCP server (usually located on the main router of the network):
 
