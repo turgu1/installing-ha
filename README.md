@@ -172,7 +172,7 @@ It is expected that the OS has been installed with the openSSH optional package.
                 dhcp4: true
                 dhcp6: false
                 interfaces:
-                    - eno1
+                       - eno1
             parameters:
                 stp: true
     ```
