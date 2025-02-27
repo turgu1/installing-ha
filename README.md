@@ -162,19 +162,19 @@ It is expected that the OS has been installed with the openSSH optional package.
 
     ```
     network:
-    ethernets:
-        eno1:
-        dhcp4: false
-        dhcp6: false
-    version: 2
-    bridges:
-        br0:
-        dhcp4: true
-        dhcp6: false
-        interfaces:
+        ethernets:
+            eno1:
+            dhcp4: false
+            dhcp6: false
+        version: 2
+        bridges:
+            br0:
+            dhcp4: true
+            dhcp6: false
+            interfaces:
                 - eno1
-        parameters:
-            stp: true
+            parameters:
+                stp: true
     ```
 
     Change it's protection:
