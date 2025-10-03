@@ -123,12 +123,12 @@ It is expected that the OS has been installed with the openSSH optional package.
     # systemctl status libvirtd
     ```
 
-12. Create Home Assistant VM folder and download image:
+12. Create Home Assistant VM folder and download image. Please note that the latest release number could be different (here 16.2). You may want to look [here](https://github.com/home-assistant/operating-system/releases) to get the latest release information and adjust steps 12 and 15 accordingly:
 
     ```
     # mkdir -vp /var/lib/libvirt/images/hassos-vm 
     # cd /var/lib/libvirt/images/hassos-vm
-    # wget https://github.com/home-assistant/operating-system/releases/download/14.2/haos_ova-14.2.qcow2.xz
+    # wget https://github.com/home-assistant/operating-system/releases/download/16.2/haos_ova-16.2.qcow2.xz
     ```
 
 13. Setup storage pool:
@@ -224,7 +224,7 @@ It is expected that the OS has been installed with the openSSH optional package.
 
     ```
     # cd /var/lib/libvirt/images/hassos-vm
-    # unxz haos_ova-14.2.qcow2.xz
+    # unxz haos_ova-16.2.qcow2.xz
     ```
 
     Now create the VM instance:
@@ -232,7 +232,7 @@ It is expected that the OS has been installed with the openSSH optional package.
     ```
     # virt-install --import --name hassos \
     --memory 4096 --vcpus 4 --cpu host \
-    --disk haos_ova-14.2.qcow2,format=qcow2,bus=virtio \
+    --disk haos_ova-16.2.qcow2,format=qcow2,bus=virtio \
     --network bridge=br0,model=virtio \
     --osinfo detect=on,require=off \
     --graphics none \
